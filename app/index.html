@@ -1,0 +1,145 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>backbone fun</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rates">Rates</a></li>
+                    <li><a href="#forSale">For Sale</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <h3 class="text-muted">Backbone Fun</h3>
+            </div>
+
+            <div class="jumbotron">
+                <h1>Welcome to Jumpin' John's Riding Emporium</h1>
+                <h5>Tattooed squid typewriter, cornhole fap Shoreditch VHS Odd Future readymade craft beer single-origin coffee. Beard gentrify hoodie street art selvage, 8-bit authentic chia Pitchfork ethnic bitters cardigan locavore seitan.</h5> 
+                <img src="http://www.equlifestyle.com/sites/default/files/styles/article_main_image/public/article_images/LauraChapotHITS.jpg">
+                <p>Fap Thundercats Cosby sweater, sartorial VHS single-origin coffee post-ironic drinking vinegar ethnic hoodie Austin gastropub kale chips locavore. You probably haven't heard of them jean shorts Shoreditch paleo polaroid roof party, shabby chic retro High Life Terry Richardson. Salvia pop-up chillwave, Blue Bottle mixtape shabby chic hashtag kogi Wes Anderson synth. Slow-carb Williamsburg ennui Neutra bicycle rights. Mustache organic iPhone, PBR Williamsburg Cosby sweater bicycle rights squid deep v Portland art party. Fingerstache pug selvage, fap YOLO hella you probably haven't heard of them polaroid church-key next level. Fingerstache single-origin coffee Austin Pitchfork scenester 3 wolf moon typewriter lo-fi, blog bespoke.</p>
+            </div>
+
+            <div class="row marketing">
+                <div class="col-lg-6">
+                   <div class="add-about"></div>
+                   <div class="add-for-sale"></div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>♥ from the Yeoman team</p>
+            </div>
+
+        </div>
+
+        <script type="text/template" id="about-template">
+            <h1>About us:</h1>
+            <h3>Roof party raw denim synth, skateboard hella VHS tote bag ugh High Life biodiesel Tumblr</h3>
+            
+            <p>Marfa post-ironic, exercitation nihil pop-up beard laboris Carles small batch asymmetrical twee pug swag. High Life proident ethnic, Carles single-origin coffee PBR&B Cosby sweater mumblecore. Nesciunt mixtape selfies raw denim, velit umami High Life est. Echo Park yr Bushwick, slow-carb magna chambray kogi aute consectetur.</p>
+            
+            <p>Assumenda adipisicing whatever, leggings try-hard elit PBR&B. Butcher sed accusamus kale chips keffiyeh esse. Deep v bespoke deserunt, nihil American Apparel fugiat id hashtag laborum Williamsburg polaroid slow-carb. Ethnic Tonx vinyl keffiyeh. Tattooed et XOXO irure hella, nesciunt consectetur exercitation Brooklyn mollit. Cornhole meh sustainable VHS bitters Truffaut, disrupt wayfarers. Banh mi reprehenderit ad laboris sed, freegan wolf.</p>
+        
+            <h3>PBR&B Marfa sapiente stumptown esse chillwave Portland disrupt.</h3>
+
+            <p>Actually Schlitz YOLO, Banksy ethical pickled hoodie literally Pitchfork id irony mumblecore. Enim VHS nisi craft beer. Mollit Williamsburg messenger bag, hella cred dreamcatcher VHS pickled Schlitz deserunt mlkshk. Reprehenderit Brooklyn Intelligentsia exercitation keytar, ea raw denim aute trust fund Carles flannel whatever sriracha 3 wolf moon sed. Intelligentsia irure veniam consequat aesthetic nulla. Retro Marfa bicycle rights, reprehenderit wolf deep v non literally disrupt odio delectus pop-up keffiyeh letterpress. Sunt occupy roof party aute.</p>
+         </script>
+
+         <script type="text/template" id="for-sale-template">
+            <h1>Horses for Sale:</h1>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_sAHwSGG6oRrIn3JavlJl-WLI32tH2eQqE6v4XLhQpbQTLJto"/>
+                <a href=#forSale/Sparky>Sparky</a>
+                <p>Eu farm-to-table pork belly four loko, Blue Bottle fanny pack beard hella meggings typewriter pickled tousled. Banksy et cred Truffaut, accusamus duis roof party PBR mixtape hella occaecat. Ethnic vinyl jean shorts Banksy Williamsburg banh mi. Next level scenester bitters, food truck pariatur jean shorts umami stumptown PBR Helvetica tattooed pop-up beard</p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRODuwnIPj-0N1MYYrVcDXKf1CbjDNkNFizhS7eQ9xi_k_Qvy-pUzX1CF_B"/>
+                <a href=#forSale/Noodles>Noodles</a>
+                <p> Neutra ea you probably havent heard of them, retro nesciunt id elit proident pour-over umami consectetur tattooed duis nostrud flexitarian. Pug craft beer bicycle rights Williamsburg, fashion axe Neutra kogi ethnic American Apparel delectus paleo Portland occaecat farm-to-table. </p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNvrwn5k22oWPRgJghbzbnBVXef2YjvDdAI9aTfEgx6aql6NV3uEuyYe7K"/>
+                <a href=#forSale/Fredrick>Fredrick</a>
+                <p>Leggings cred Williamsburg Brooklyn, literally farm-to-table bitters readymade pariatur Vice do duis Etsy.</p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU47Ax3xan4qWJPrkbrRWdwOtfafaxJOixrLRq8Gjr6lAytf4X"/>
+                <a href=#forSale/Goose>Goose</a>
+                <p>Retro Marfa bicycle rights, reprehenderit wolf deep v non literally disrupt odio delectus pop-up keffiyeh letterpress. Sunt occupy roof party aute.</p>
+            </div>
+            <div>
+                <img src="http://www.floridahorse.com/images/2004wef/LauraChapotPB226.jpg"/>
+                <a href=#forSale/DrPepper>Dr. Pepper</a>
+                <p>Put a bird on it Godard pickled kogi, Blue Bottle try-hard seitan irony art party lomo kale chips salvia stumptown sartorial Carles. Artisan chia banh mi, viral leggings mumblecore selvage ugh farm-to-table pop-up. Scenester polaroid Truffaut try-hard gentrify YOLO, umami Odd Future cliche synth Intelligentsia gluten-free. Vegan viral plaid yr photo booth, keytar slow-carb lomo ugh distillery vinyl VHS mumblecore before they sold out. Gluten-free fingerstache bespoke cornhole tofu, Echo Park drinking vinegar Odd Future pork belly you probably havent heard of them. Brooklyn actually roof party, ethnic seitan Carles hella. Banh mi squid sartorial swag Terry Richardson jean shorts</p>
+            </div>
+
+         </script>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
+        <script src="bower_components/backbone/backbone.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="bower_components/sass-bootstrap/js/affix.js"></script>
+        <script src="bower_components/sass-bootstrap/js/alert.js"></script>
+        <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/sass-bootstrap/js/modal.js"></script>
+        <script src="bower_components/sass-bootstrap/js/transition.js"></script>
+        <script src="bower_components/sass-bootstrap/js/button.js"></script>
+        <script src="bower_components/sass-bootstrap/js/popover.js"></script>
+        <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+        <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+        <script src="bower_components/sass-bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/router.js"></script>
+        <script src="scripts/about-view.js"></script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
