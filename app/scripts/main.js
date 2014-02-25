@@ -7,9 +7,5 @@ $(document).ready(function(){
 	Backbone.history.start(); //where you also turn on pushstart or specigiy sub-folder if thats where youre serving from
 
 
-
-
-
-
-
+				
 })

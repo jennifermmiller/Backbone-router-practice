@@ -31,26 +31,15 @@
             <div class="header">
                 <ul class="nav nav-pills pull-right">
                     <li class="active"><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#rates">Rates</a></li>
+                    <li><a id="aboutlink" href="#about">About</a></li>
                     <li><a href="#forSale">For Sale</a></li>
+                    <li><a href="#rates">Rates</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <h3 class="text-muted">Backbone Fun</h3>
             </div>
 
             <div class="jumbotron">
-                <h1>Welcome to Jumpin' John's Riding Emporium</h1>
-                <h5>Tattooed squid typewriter, cornhole fap Shoreditch VHS Odd Future readymade craft beer single-origin coffee. Beard gentrify hoodie street art selvage, 8-bit authentic chia Pitchfork ethnic bitters cardigan locavore seitan.</h5> 
-                <img src="http://www.equlifestyle.com/sites/default/files/styles/article_main_image/public/article_images/LauraChapotHITS.jpg">
-                <p>Fap Thundercats Cosby sweater, sartorial VHS single-origin coffee post-ironic drinking vinegar ethnic hoodie Austin gastropub kale chips locavore. You probably haven't heard of them jean shorts Shoreditch paleo polaroid roof party, shabby chic retro High Life Terry Richardson. Salvia pop-up chillwave, Blue Bottle mixtape shabby chic hashtag kogi Wes Anderson synth. Slow-carb Williamsburg ennui Neutra bicycle rights. Mustache organic iPhone, PBR Williamsburg Cosby sweater bicycle rights squid deep v Portland art party. Fingerstache pug selvage, fap YOLO hella you probably haven't heard of them polaroid church-key next level. Fingerstache single-origin coffee Austin Pitchfork scenester 3 wolf moon typewriter lo-fi, blog bespoke.</p>
-            </div>
-
-            <div class="row marketing">
-                <div class="col-lg-6">
-                   <div class="add-about"></div>
-                   <div class="add-for-sale"></div>
-                </div>
             </div>
 
             <div class="footer">
@@ -58,6 +47,14 @@
             </div>
 
         </div>
+
+        <script type="text/template" id="home-template">
+            <h3>Jumpin' John's Riding Emporium</h3>
+            <h5>Tattooed squid typewriter, cornhole fap Shoreditch VHS Odd Future readymade craft beer single-origin coffee. Beard gentrify hoodie street art selvage, 8-bit authentic chia Pitchfork ethnic bitters cardigan locavore seitan.</h5> 
+            <img class="main-image" src="http://www.equlifestyle.com/sites/default/files/styles/article_main_image/public/article_images/LauraChapotHITS.jpg">
+            <span>Wes Anderson</span>
+            <p>Fap Thundercats Cosby sweater, sartorial VHS single-origin coffee post-ironic drinking vinegar ethnic hoodie Austin gastropub kale chips locavore. You probably heard of them jean shorts Shoreditch paleo polaroid roof party, shabby chic retro High Life Terry Richardson. Salvia pop-up chillwave, Blue Bottle mixtape shabby chic hashtag kogi Wes Anderson synth. Slow-carb Williamsburg ennui Neutra bicycle rights. Mustache organic iPhone, PBR Williamsburg Cosby sweater bicycle rights squid deep v Portland art party. Fingerstache pug selvage, fap YOLO hella you probably heard of them polaroid church-key next level. Fingerstache single-origin coffee Austin Pitchfork scenester 3 wolf moon typewriter lo-fi, blog bespoke.</p>
+        </script>
 
         <script type="text/template" id="about-template">
             <h1>About us:</h1>
@@ -70,37 +67,60 @@
             <h3>PBR&B Marfa sapiente stumptown esse chillwave Portland disrupt.</h3>
 
             <p>Actually Schlitz YOLO, Banksy ethical pickled hoodie literally Pitchfork id irony mumblecore. Enim VHS nisi craft beer. Mollit Williamsburg messenger bag, hella cred dreamcatcher VHS pickled Schlitz deserunt mlkshk. Reprehenderit Brooklyn Intelligentsia exercitation keytar, ea raw denim aute trust fund Carles flannel whatever sriracha 3 wolf moon sed. Intelligentsia irure veniam consequat aesthetic nulla. Retro Marfa bicycle rights, reprehenderit wolf deep v non literally disrupt odio delectus pop-up keffiyeh letterpress. Sunt occupy roof party aute.</p>
-         </script>
+        </script>
 
-         <script type="text/template" id="for-sale-template">
+        <script type="text/template" id="rates-template">
+            <h3>Our Monthly Rates:</h3>
+            <p>Blah...........make a table of services/prices or something here</p>
+        </script> 
+
+        <script type="text/template" id="for-sale-template">
             <h1>Horses for Sale:</h1>
             <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_sAHwSGG6oRrIn3JavlJl-WLI32tH2eQqE6v4XLhQpbQTLJto"/>
-                <a href=#forSale/Sparky>Sparky</a>
-                <p>Eu farm-to-table pork belly four loko, Blue Bottle fanny pack beard hella meggings typewriter pickled tousled. Banksy et cred Truffaut, accusamus duis roof party PBR mixtape hella occaecat. Ethnic vinyl jean shorts Banksy Williamsburg banh mi. Next level scenester bitters, food truck pariatur jean shorts umami stumptown PBR Helvetica tattooed pop-up beard</p>
+                <img class="horse-for-sale" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_sAHwSGG6oRrIn3JavlJl-WLI32tH2eQqE6v4XLhQpbQTLJto"/>
+               <div>
+                    <a href=#forSale/Sparky>Sparky</a>
+                    <p>Eu farm-to-table pork belly four loko, Blue Bottle fanny pack beard hella meggings typewriter pickled tousled. Banksy et cred Truffaut, accusamus duis roof party PBR mixtape hella occaecat. Ethnic vinyl jean shorts Banksy Williamsburg banh mi. Next level scenester bitters, food truck pariatur jean shorts umami stumptown PBR Helvetica tattooed pop-up beard</p>
+                </div>    
             </div>
             <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRODuwnIPj-0N1MYYrVcDXKf1CbjDNkNFizhS7eQ9xi_k_Qvy-pUzX1CF_B"/>
-                <a href=#forSale/Noodles>Noodles</a>
-                <p> Neutra ea you probably havent heard of them, retro nesciunt id elit proident pour-over umami consectetur tattooed duis nostrud flexitarian. Pug craft beer bicycle rights Williamsburg, fashion axe Neutra kogi ethnic American Apparel delectus paleo Portland occaecat farm-to-table. </p>
+                <img class="horse-for-sale" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRODuwnIPj-0N1MYYrVcDXKf1CbjDNkNFizhS7eQ9xi_k_Qvy-pUzX1CF_B"/>
+                <div>
+                    <a href=#forSale/Noodles>Noodles</a>
+                    <p> Neutra ea you probably havent heard of them, retro nesciunt id elit proident pour-over umami consectetur tattooed duis nostrud flexitarian. Pug craft beer bicycle rights Williamsburg, fashion axe Neutra kogi ethnic American Apparel delectus paleo Portland occaecat farm-to-table. </p>
+                </div>    
             </div>
             <div>
-                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNvrwn5k22oWPRgJghbzbnBVXef2YjvDdAI9aTfEgx6aql6NV3uEuyYe7K"/>
-                <a href=#forSale/Fredrick>Fredrick</a>
-                <p>Leggings cred Williamsburg Brooklyn, literally farm-to-table bitters readymade pariatur Vice do duis Etsy.</p>
+                <img class="horse-for-sale" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNvrwn5k22oWPRgJghbzbnBVXef2YjvDdAI9aTfEgx6aql6NV3uEuyYe7K"/>
+                <div>
+                    <a href=#forSale/Fredrick>Fredrick</a>
+                    <p>Leggings cred Williamsburg Brooklyn, literally farm-to-table bitters readymade pariatur Vice do duis Etsy.</p>
+                </div>    
             </div>
             <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU47Ax3xan4qWJPrkbrRWdwOtfafaxJOixrLRq8Gjr6lAytf4X"/>
-                <a href=#forSale/Goose>Goose</a>
-                <p>Retro Marfa bicycle rights, reprehenderit wolf deep v non literally disrupt odio delectus pop-up keffiyeh letterpress. Sunt occupy roof party aute.</p>
+                <img class="horse-for-sale" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU47Ax3xan4qWJPrkbrRWdwOtfafaxJOixrLRq8Gjr6lAytf4X"/>
+                <div>
+                    <a href=#forSale/Goose>Goose</a>
+                    <p>Retro Marfa bicycle rights, reprehenderit wolf deep v non literally disrupt odio delectus pop-up keffiyeh letterpress. Sunt occupy roof party aute.</p>
+                </div>    
             </div>
             <div>
-                <img src="http://www.floridahorse.com/images/2004wef/LauraChapotPB226.jpg"/>
-                <a href=#forSale/DrPepper>Dr. Pepper</a>
-                <p>Put a bird on it Godard pickled kogi, Blue Bottle try-hard seitan irony art party lomo kale chips salvia stumptown sartorial Carles. Artisan chia banh mi, viral leggings mumblecore selvage ugh farm-to-table pop-up. Scenester polaroid Truffaut try-hard gentrify YOLO, umami Odd Future cliche synth Intelligentsia gluten-free. Vegan viral plaid yr photo booth, keytar slow-carb lomo ugh distillery vinyl VHS mumblecore before they sold out. Gluten-free fingerstache bespoke cornhole tofu, Echo Park drinking vinegar Odd Future pork belly you probably havent heard of them. Brooklyn actually roof party, ethnic seitan Carles hella. Banh mi squid sartorial swag Terry Richardson jean shorts</p>
+                <img class="horse-for-sale" src="http://www.floridahorse.com/images/2004wef/LauraChapotPB226.jpg"/>
+                <div>
+                    <a href=#forSale/DrPepper>Dr. Pepper</a>
+                    <p>Put a bird on it Godard pickled kogi, Blue Bottle try-hard seitan irony art party lomo kale chips salvia stumptown sartorial Carles. Artisan chia banh mi, viral leggings mumblecore selvage ugh farm-to-table pop-up. Scenester polaroid Truffaut try-hard gentrify YOLO, umami Odd Future cliche synth Intelligentsia gluten-free. Vegan viral plaid yr photo booth, keytar slow-carb lomo ugh distillery vinyl VHS mumblecore before they sold out. Gluten-free fingerstache bespoke cornhole tofu, Echo Park drinking vinegar Odd Future pork belly you probably havent heard of them. Brooklyn actually roof party, ethnic seitan Carles hella. Banh mi squid sartorial swag Terry Richardson jean shorts</p>
+                </div>    
             </div>
+        </script>
 
-         </script>
+        <script type="text/template" id="contact-template">
+            <h3> Contact Us: </h3>
+            <h5>Jumpin' John's Riding Emporium</h5>
+            <h5>123 Rainbow Way</h5>
+            <h5>Greenvile, SC 56789</h5>
+            <h5>Phone: (345)234-2345</h5>
+            <h5>email: jumpinjohnny@abc.com</h5>
+        </script>
 
 
         <!-- build:js scripts/vendor.js -->

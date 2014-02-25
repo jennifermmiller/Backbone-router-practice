@@ -1,39 +1,54 @@
+//how do you hookup views to seperate html pages? wouldnt you just create an href a new html page?
+//I think I undestand implementing routers but..I need a contrete example of how they're used
+
+
 var MainRouter = Backbone.Router.extend({
 	routes:{
 		'home': 'homePage',
 		'about': 'aboutPage',  //never put in / or # ...***This is always assumed!!
-		'rate': 'ratesPage', //each horse could have a name
-		'forSale': 'forSalePage', //each horse could have a name
-		'forSale/:name': 'forSalePage',
+		'rates': 'ratesPage', 
+		'forSale': 'forSalePage', 
+		'forSale/:name': 'forSalePage', //each horse could have a name and get an expanded class or something
 		'contact': 'contactPage',
 
 	},
 
 	initialize: function(){
-		console.log('Booyah! A router is born!')
+		console.log('Booyah! A router is born!');
 	},
 
-	aboutPage: function(name){
-		if(name){
-			console.log('This is a page about ', name)
-		} else{
-			new AboutView();
-		}	
+	homePage: function(){
+		console.log('hmmmm');
+		$('.jumbotron').html('');
+		$('.jumbotron').append(new HomeView());
 	},
 
-	//add a do something on clicking name
-	forSalePage: function(name){ 
-		new ForSaleView();
-		// if(name){
-
-		// } else {}
+	aboutPage: function(){
+		$('.jumbotron').html('');
+		$('.jumbotron').prepend(new AboutView());
 	},
 
 	ratesPage: function(){
+		$('.jumbotron').html('');
+		$('.jumbotron').prepend(new RatesView());
+	},
 
+	//add a do something on click name?
+	forSalePage: function(name){ 
+		$('.jumbotron').html('');
+		$('.jumbotron').prepend(new ForSaleView());
+		
+		if(name){
+			console.log(name);
+		} else {
+			console.log('Strange, are no ponies w/o a names, why does this showup?')
+		}
+	},
+
+	contactPage: function(){
+		$('.jumbotron').html('');
+		$('.jumbotron').prepend(new ContactView());
 	}
-
-
 });
 
 
